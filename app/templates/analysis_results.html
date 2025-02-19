@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Analysis Results</h2>
+<p>Risk Score: <span class="risk-score">{{ risk_score }}</span></p>
+<ul>
+  {% for finding in findings %}
+    <li>
+      <strong>{{ finding.clause }}:</strong> {{ finding.explanation }}
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

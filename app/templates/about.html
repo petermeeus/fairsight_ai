@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section" id="about-mission">
+  <div class="section-content animate-up">
+    <h2>About FairSight AI</h2>
+    <p>
+      FairSight AI was founded on the belief that everyone deserves transparent, secure contracts—whether you’re a freelancer, a small business, or an everyday consumer.
+      Our platform leverages cutting-edge AI and natural language processing to make contract review accessible and understandable.
+    </p>
+    <h3>Our Mission</h3>
+    <p>
+      To democratize contract security by providing intuitive, real-time fraud detection for individuals and organizations of all sizes.
+      We combine advanced ML models with human-centric design, ensuring every user can navigate contracts with confidence.
+    </p>
+  </div>
+</section>
+
+<!-- The Team Section -->
+<section class="section alt-bg" id="the-team">
+  <div class="section-content animate-up">
+    <h2>The Team</h2>
+    <p>Meet the minds behind FairSight AI. We come from backgrounds in AI research as students at RUG, and supported by facilty and competitions around the Groningen entrepreneurial ecosystem..</p>
+    
+    <div class="team-grid">
+      <!-- Example team member -->
+      <div class="team-member">
+        <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Team Member 1">
+        <h3>Andrew Alvin</h3>
+        <p>Co-Founder, AI Researcher</p>
+        <p>Andrew specializes in NLP and machine learning, having led multiple AI-driven projects in fraud detection.</p>
+      </div>
+      
+      <div class="team-member">
+        <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Team Member 2">
+        <h3>Peter-willem Meeus</h3>
+        <p>Co-Founder, AI Researcher</p>
+        <p>With insight into human health AI systems, Peter guides the team into a sustainable future for everyday use.</p>
+      </div>
+
+      <!-- Add more as needed -->
+      <div class="team-member">
+        <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Team Member 3">
+        <h3>Zofia Drozdz</h3>
+        <p>Co-Founder, AI Researcher</p>
+        <p>Zofia's expertise in data modeling and analytics drives the continuous improvement of our ML pipelines.</p>
+      </div>
+
+      <!-- Add more as needed -->
+      <div class="team-member">
+        <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Team Member 4">
+        <h3>Csanád Pászti</h3>
+        <p>Co-Founder, AI Researcher</p>
+        <p>Csanád focuses on making things work, building frameworks and ensures FairSight AI remains compliant and relevant across multiple jurisdictions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

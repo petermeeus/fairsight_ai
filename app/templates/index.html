@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('static/images/bernoulliborg-analyse-resultaat-01_FotoSketcher.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content animate-fadein">
+    <h1 class="hero-title">Navigate Contracts Like a Pro</h1>
+    <p class="hero-subtitle">
+      FairSight AI empowers everyday users and small businesses with AI-driven contract fraud detection.
+    </p>
+    <a href="{{ url_for('analysis.upload_contract') }}" class="btn-large">
+      Try Our Tool
+    </a>
+  </div>
+</section>
+
+<!-- Problem & Solution Section -->
+<section class="section alt-bg" id="problem-solution">
+  <div class="section-content animate-up">
+    <div class="two-column">
+      <div>
+        <h2>The Problem</h2>
+        <p>
+          Contracts are dense and filled with legal jargon that conceals unfair or fraudulent terms.
+          Without affordable legal counsel, individuals and small businesses risk financial and legal harm.
+        </p>
+        <img src="{{ url_for('static', filename='images/360_F_1138081122_I825PbF6T9p6WiCfYR8AIRsw1DEDzfpw_FotoSketcher.jpg') }}" alt="Problem Illustration" class="section-image" />
+      </div>
+      <div>
+        <h2>Our Solution</h2>
+        <p>
+          FairSight AI uses advanced NLP and machine learning to flag suspicious clauses,
+          detect metadata tampering, and provide plain-language explanations—empowering non-experts
+          to review contracts with confidence.
+        </p>
+        <img src="{{ url_for('static', filename='images/images_FotoSketcher.jpg') }}" alt="Solution Illustration" class="section-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="section" id="benefits">
+  <div class="section-content animate-up">
+    <h2>Key Benefits</h2>
+    <ul class="features-list">
+      <li><strong>Speed:</strong> Instant scanning and risk scoring.</li>
+      <li><strong>Efficiency:</strong> Automated detection of suspicious clauses.</li>
+      <li><strong>Compliance:</strong> Cross-checks with industry and regulatory standards.</li>
+      <li><strong>Clarity:</strong> Plain-language explanations for non-experts.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Market Insights (Carousel) Section -->
+<section class="section" id="carousel-highlights">
+  <div class="section-content animate-up">
+    <h2>Market Insights</h2>
+    <p>
+      The contract fraud detection market is poised for rapid growth, with regulatory demands and an untapped consumer niche.
+    </p>
+    <div class="carousel-container">
+      <!-- Left Arrow -->
+      <button class="carousel-arrow left-arrow" data-direction="prev">&#10094;</button>
+      <!-- Carousel Wrapper -->
+      <div class="carousel" id="statsCarousel">
+        <div class="carousel-slide">
+          <h3>Untapped Niche</h3>
+          <p>
+            The global contract market is valued at $3B with a 13% CAGR, yet consumer-focused tools remain scarce.
+          </p>
+        </div>
+        <div class="carousel-slide">
+          <h3>AI Fraud Market</h3>
+          <p>
+            AI fraud detection is projected to grow dramatically, with contract review emerging as the next frontier.
+          </p>
+        </div>
+        <div class="carousel-slide">
+          <h3>Regulatory Boost</h3>
+          <p>
+            GDPR/CCPA and similar regulations demand transparent, fair contracts—fueling the need for accessible AI solutions.
+          </p>
+        </div>
+      </div>
+      <!-- Right Arrow -->
+      <button class="carousel-arrow right-arrow" data-direction="next">&#10095;</button>
+      <!-- Dot Indicators -->
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Roadmap Section (Timeline) -->
+<section class="section alt-bg" id="mission-roadmap">
+  <div class="section-content animate-up">
+    <h2>Our Mission & Roadmap</h2>
+    <p>
+      We aim to democratize contract security, empowering users to protect themselves against hidden or unfair terms.
+      Our hybrid AI-human approach delivers real-time risk scoring and clarity.
+    </p>
+    <!-- Timeline Container -->
+    <div class="timeline">
+      <!-- Phase 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <h3>Phase 1 (0–12 Months)</h3>
+          <p>
+            Build an MVP with core detection features and gather diverse contract datasets.
+          </p>
+        </div>
+      </div>
+      <!-- Phase 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <h3>Phase 2 (12–24 Months)</h3>
+          <p>
+            Scale infrastructure, partner with e-signature platforms, and launch targeted marketing.
+          </p>
+        </div>
+      </div>
+      <!-- Phase 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon"></div>
+        <div class="timeline-content">
+          <h3>Phase 3 (24+ Months)</h3>
+          <p>
+            Expand into localized, jurisdiction-specific analysis and refine our ML models continuously.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional Roadmap Graphic -->
+    <img src="{{ url_for('static', filename='images/roadmap.jpg') }}" alt="Roadmap Graphic" class="section-image" />
+  </div>
+</section>
+
+{% endblock %}

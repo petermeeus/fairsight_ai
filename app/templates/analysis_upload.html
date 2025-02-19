@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Contract Analysis</h2>
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.contract_file.label }}<br>
+      {{ form.contract_file() }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}
